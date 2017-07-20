@@ -8,11 +8,12 @@ app.set("views", __dirname + "/views" );
 
 // Manually setting a route
 app.get("/", function(request, response) {
-  response.send("Hello World!");
+  response.sendFile(__dirname + '/views/index.html')
 });
 // get "/" do
 //   "Hello World!"
 // end
+
 
 // Having defined the routes in a separate file
 const test = require("./routes/test");
