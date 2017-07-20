@@ -6,13 +6,6 @@ router.get("/:id", function(req, res) {
     derp: req.params["id"],
   });
 });
-//get "/test/:id" do
-//  erb "view", locals: {derp: parmas[:id]}
-//end
-// router.get("/", function(req, res) {
-//   res.render("index.ejs");
-// });
-
 
 router.get("*", function(req,res) {
   res.send("You hit the test catchall, trying to hit /test" + req.url);
