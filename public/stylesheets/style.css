@@ -7,6 +7,12 @@ body {
   text-align: center;
 }
 
+.header img {
+  height:200px;
+  width:100%;
+  clip-path: inset(10px, 20px, 30px, 40px);
+}
+
 nav {
   margin:0 auto;
   text-align: center;
@@ -16,4 +22,21 @@ nav {
 
 h2 {
   text-align: center
+}
+
+.content {
+  margin:0 auto;
+  width:80%;
+}
+
+.footer {
+  text-align: center;
+  padding:20px;
+  color:#fff;
+  background-color: #000;
+  position:fixed;
+  left:0px;
+  bottom: 0px;
+  width:100%;
+
 }
