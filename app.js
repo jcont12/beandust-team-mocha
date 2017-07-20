@@ -8,16 +8,26 @@ app.set("views", __dirname + "/views" );
 
 // Manually setting a route
 app.get("/", function(request, response) {
-  response.sendFile(__dirname + '/views/index.html')
+
+  response.sendFile('index.html', { root: __dirname + '/views' });
 });
-// get "/" do
-//   "Hello World!"
-// end
 
+app.get('/about', function(request, response) {
+  response.sendFile('about.html', { root: __dirname + '/views' });
+});
 
-// Having defined the routes in a separate file
-const test = require("./routes/test");
-app.use("/test", test);
+app.get('/menu', function(request, response) {
+  response.sendFile('menu.html', { root: __dirname + '/views'});
+});
+
+app.get('/mission', function(request, response) {
+    response.sendFile('mission.html', { root: __dirname + '/views' });
+});
+
+app.get('/location', function(request, response) {
+    response.sendFile('location.html', { root: __dirname + '/views'});
+});
+
 
 // Start the server
 app.listen(3000);
