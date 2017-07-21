@@ -69,6 +69,15 @@ h2 {
     float:left;
 }
 
+.address {
+  float: left;
+  width: 30%;
+}
+
+iframe {
+  float: left;
+}
+
 .footer {
   text-align: center;
   padding:20px;
@@ -78,5 +87,4 @@ h2 {
   left:0px;
   bottom: 0px;
   width:100%;
-
 }
