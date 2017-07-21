@@ -20,17 +20,18 @@
       <h1>Beandust Espresso</h1>
     </div>
     <div class='content'>
-      <h2>Location:</h2>
-      <p id='location-text'>
-        401 5th Ave<br />
-        <u>Hours:</u><br />
-        Monday 4am-11am<br />
-        All other days 24hrs
-      </p>
-      
-      <div id='map'></div>
+      <div class="location">
+        <h2>Location:</h2>
+        <p id='location-text'>
+          401 5th Ave<br />
+          <u>Hours:</u><br />
+          Monday 4am-11am<br />
+          All other days 24hrs
+        </p>
+
+        <div id='map'></div>
         <script>
-          function initMap() {
+        function initMap() {
           var beanDustEspresso = {lat: 47.622943, lng: -122.348843};
           var map = new google.maps.Map(document.getElementById('map'), {
             zoom: 15,
@@ -41,7 +42,9 @@
             map: map
           });
         }
-      </script>
+        </script>
+
+      </div>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMxDx8Q_U2VFyq-K9BminAcauR_EpH6xc&callback=initMap">
       </script>
 

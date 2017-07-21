@@ -92,8 +92,6 @@ iframe {
 #location-text {
   display:inline;
   float:left;
-  margin-right: 10px;
-
 
 }
 
@@ -102,5 +100,5 @@ iframe {
    width: 50%;
    height: 300px;
    background-color: grey;
-
+   float: right
  }
