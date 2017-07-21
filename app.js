@@ -14,7 +14,6 @@ app.set("views", __dirname + "/views" );
 
 // Manually setting a route
 app.get("/", function(request, response) {
-
   response.sendFile('index.html', { root: __dirname + '/views' });
 });
 
@@ -34,10 +33,7 @@ app.get('/location', function(request, response) {
     response.sendFile('location.html', { root: __dirname + '/views'});
 });
 
-app.get('/products/index', function(request, response) {
-    response.sendFile('/products/index.html', { root: __dirname + '/views'});
-});
-
+app.use("/products", orders);
 
 
 // Start the server

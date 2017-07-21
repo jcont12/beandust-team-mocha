@@ -11,6 +11,14 @@ const cn = {
 }
 const db=pgp(cn)
 
+router.get("/", function(req, res) {
+  res.sendFile('/products/index.html', { root: __dirname + '/../views'});
+});
+
+router.get("/index", function(req, res) {
+  res.sendFile('/products/index.html', { root: __dirname + '/../views'});
+});
+
 router.get("/:id", function(req, res) {
   db.query("SELECT * FROM Orders")
     .then((data) => {})
@@ -24,7 +32,7 @@ router.post("*", function(req, res) {
   console.log(confirmation_number, req.body);
   console.log("*****************");
   db.query("INSERT INTO Orders(user_id, item, quantity, description, confirmation_number, price, createdAt, updatedAt) VALUES (" + req.body.user_id + ", '" + req.body.item + "', " + req.body.quantity + ", '" + req.body.description + "', '" + confirmation_number + "', '" + req.body.price + "', current_timestamp, current_timestamp);");
-  res.send({redirect: "/products"})
+  res.redirect("/products")
 });
 
 module.exports = router;
