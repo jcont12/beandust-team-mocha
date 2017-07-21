@@ -32,6 +32,15 @@ app.get('/products/index', function(request, response) {
     response.sendFile('/products/index.html', { root: __dirname + '/views'});
 });
 
+app.get('/orders/new', function(request, response) {
+    response.sendFile('/orders/new.html', { root: __dirname + '/views'});
+});
+
+app.get('/orders/show', function(request, response) {
+    response.sendFile('/orders/show.html', { root: __dirname + '/views'});
+});
+
+
 
 
 // Start the server
