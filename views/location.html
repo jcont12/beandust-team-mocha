@@ -13,18 +13,38 @@
       <a href='/location'>Location</a>
       <a href='/about'>About Us</a>
     </nav>
-    <div class='content'>
-
-    <div class="address">
-      <h3>Visit Us!</h3>
-      401 5th Ave<br />
-      Seattle, WA 98104<br /><br />
-
-      <strong>Hours</strong>
-      Monday 4am-11am<br />
-      All other days 24hrs
+    <div class='header'>
+      <div class='crop'>
+        <img src='/img/coffee_home.jpg' alt='#homeimage' />
+      </div>
+      <h1>Beandust Espresso</h1>
     </div>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2690.2162788903747!2d-122.33076378446395!3d47.602484079184386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906aba3f3d6de5%3A0x1fb437d954dcddd2!2s401+5th+Ave%2C+Seattle%2C+WA+98104!5e0!3m2!1sen!2sus!4v1500609608397" width="500" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <div class='content'>
+      <h2>Location:</h2>
+      <p id='location-text'>
+        401 5th Ave<br />
+        <u>Hours:</u><br />
+        Monday 4am-11am<br />
+        All other days 24hrs
+      </p>
+      
+      <div id='map'></div>
+        <script>
+          function initMap() {
+          var beanDustEspresso = {lat: 47.622943, lng: -122.348843};
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: beanDustEspresso
+          });
+          var marker = new google.maps.Marker({
+            position: beanDustEspresso,
+            map: map
+          });
+        }
+      </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMxDx8Q_U2VFyq-K9BminAcauR_EpH6xc&callback=initMap">
+      </script>
+
     </div>
     <div class ='footer'>
       <p>
