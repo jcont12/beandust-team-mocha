@@ -3,27 +3,39 @@
   <head>
     <meta charset="utf-8">
     <title>Beandust Espresso</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link href="/stylesheets/style.css" rel = "stylesheet" type="text/css">
   </head>
   <body>
-    <nav>
-      <a href='/'>Home</a>
-      <a href='/mission'>Mission</a>
-      <a href='/menu'>Menu</a>
-      <a href='/location'>Location</a>
-      <a href='/about'>About Us</a>
+    <nav class='navbar-fixed-top navbar navbar-inverse'>
+        <a href='#' class='navbar-left'><img id='beandust-logo' src='/img/Logo.png' alt='#logoimage' /></a>
+      <a class='btn btn-primary btn-lg' role='button' href='/'>Home</a>
+      <a class='btn btn-primary btn-lg' role='button' href='/mission'>Mission</a>
+      <a class='btn btn-primary btn-lg' role='button' href='/menu'>Menu</a>
+      <a class='btn btn-primary btn-lg' role='button' href='/location'>Location</a>
+      <a class='btn btn-primary btn-lg' role='button' href='/about'>About Us</a>
+      <a class='btn btn-primary btn-success btn-lg' role='button' href='/products/index'>Order</a>
     </nav>
     <div class='header'>
       <div class='crop'>
-        <img src='/img/coffee_home.jpg' alt='#homeimage' />
+        <img src='/img/coffee1.jpg' alt='#aboutimage' />
       </div>
       <h1>Beandust Espresso</h1>
     </div>
     <div class='content'>
       <h2>About Us:</h2>
-      Sage Donnelly has a doctorate of the arts from North Kenwood university. She uses her talents to help launch small businesses. Some of her past successes include Microsoft, Standard Oil, The North Atlantic Railroad, and Google.
+      <img class='profile raymond img-fluid' src='/img/Raymond.jpg' alt='#aboutimage' />
+      <img class='profile sage' src='/img/Sage.jpg' alt='#aboutimage' />
+      <p id='about-content'>Sage Donnelly has a doctorate of the arts from North Kenwood university. She uses her talents to help launch small businesses. Some of her past successes include Microsoft, Standard Oil, The North Atlantic Railroad, and Google.<br/><br/><br/><br/><br/>
 
-      Raymond Grady is a self-sealing stembolt mogul with a passion for amazing coffee. He’s put his vast stem-bolt fortune toward opening Beandust espresso. His dedication knows no bounds.
+      Raymond Grady is a self-sealing stembolt mogul with a passion for amazing coffee. He’s put his vast stem-bolt fortune toward opening Beandust espresso. His dedication knows no bounds.</p>
     </div>
     <div class ='footer'>
       <p>
