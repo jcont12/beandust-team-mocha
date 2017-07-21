@@ -26,6 +26,13 @@ h1 {
   width: 100%;
   font-size: 70px;
   text-shadow: -2px 2px grey;
+
+}
+
+#beandust-logo {
+  height:50px;
+  padding:0px;
+  margin:0px;
 }
 
 nav {
@@ -33,12 +40,13 @@ nav {
   text-align: center;
   padding: 20px;
   text-transform: uppercase;
-
+  position:absolute;
 }
 
 nav a {
   text-decoration: none;
   padding: 0 10px;
+
 }
 
 
@@ -81,17 +89,21 @@ iframe {
 .footer {
   text-align: center;
   padding:20px;
+  margin-top:5000px;
   color:#fff;
   background-color: #000;
   position:fixed;
+  display:none;
   left:0px;
-  bottom: 0px;
+  bottom: 0;
   width:100%;
+  height:2px;
 }
 
 #location-text {
   display:inline;
   float:left;
+  font-size: 120%;
 
 }
 
@@ -102,3 +114,48 @@ iframe {
    background-color: grey;
    float: right
  }
+
+ table {
+   margin-bottom:10px;
+ }
+
+ th {
+   background-color: green;
+   color:white;
+   font-size: 120%;
+   padding-right: 4em;
+ }
+
+td {
+  font-size: 120%;
+  padding-right: 4em;
+}
+
+#mission-content {
+  font-size: 120%;
+  margin: 20px auto;
+  text-align: center;
+  width: 60%;
+}
+
+#about-content {
+  font-size: 120%;
+  margin: 40px auto;
+  width: 60%;
+}
+
+.raymond {
+  height:130px;
+  display: inline-block;
+  float:left;
+  margin-top: 160px;
+  margin-left: 70px;
+
+}
+
+.sage {
+  height:130px;
+  display: inline-block;
+  float: right;
+  margin-right: 90px;
+}

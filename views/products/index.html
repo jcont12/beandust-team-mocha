@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Beandust Espresso</title>
+    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Optional theme -->
@@ -11,9 +12,11 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link href="/stylesheets/style.css" rel = "stylesheet" type="text/css">
-    <link href="/stylesheets/style.css" rel = "stylesheet" type="text/css">
   </head>
   <body>
+    <div class='brand brand-name navbar-left pull-left'>
+
+    </div>
     <nav class='navbar-fixed-top navbar navbar-inverse'>
       <a href='#' class='navbar-left'><img id='beandust-logo' src='/img/Logo.png' alt='#logoimage' /></a>
       <a class='btn btn-primary btn-lg' role='button' href='/'>Home</a>
@@ -23,20 +26,41 @@
       <a class='btn btn-primary btn-lg' role='button' href='/about'>About Us</a>
       <a class='btn btn-primary btn-success btn-lg' role='button' href='/products/index'>Order</a>
     </nav>
-    <div class='header'>
-      <div class='crop'>
-        <img src='/img/coffee4.jpg' alt='#homeimage' />
+      <div class='header'>
+        <div class='crop'>
+          <img src='/img/coffee_home.jpg' alt='#homeimage' />
+        </div>
+        <h1>Beandust Espresso</h1>
       </div>
-      <h1>Beandust Espresso</h1>
-    </div>
-    <h2> Mission Statement:</h2>
-    <div class='content'>
-      <p id='mission-content'>
-      Our customers come first. We want our customers to take part in the adventure as we explore the rainbow of coffee flavors. We treat our coffees with precision and care, from export to storage to roasting to cup. We are ambassadors for the farmers of fine quality coffees – dedicated to knowledge and its dissemination, accurate execution, caring communication, detailed service and the highest levels of excellence.<br /><br />
+      <div class='content'>
+        <h2>Product List:</h2>
+          <div class='table-responsive' id="bean-order">
+            <table class='table'>
+              <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+              </tr>
+              <tr>
+                <td>1 lb. Nicaraguan Coffee Bag, Fair-trade</td>
+                <td>$12.00</td>
+                <td>Quantity</td>
+                <td><a href='#'>Order</a></td>
+                <td><a href='#'>Reserve</a></td>
+              </tr>
+              <tr>
+                <td> Cool beans t-shirt</td>
+                <td>$18.00</td>
+                <td>Quantity</td>
+                <td><a href='#'>Order</a></td>
+                <td><a href='#'>Reserve</a></td>
+              </tr>
+            </table>
+          </div>
+      </div>
 
-      Quality coffee farmers are our partners. We form relationships with farmers we trust and deeply respect for their consistent dedication to excellence. We benefit from their hard work, attention to detail, and virtuosity – and pay accordingly, independent of the commodity market. As roasters and brewers, we are interpreters of the symphony composed by farmers interacting with nature. We strive to deliver, without overpowering, all the translucent layers of flavor inherent in great coffees.
-      </p>
-    </div>
+        </p>
+      </div>
     <div class ='footer'>
       <p>
         Copyright 2017
