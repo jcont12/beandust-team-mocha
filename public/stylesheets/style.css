@@ -28,8 +28,10 @@ h1 {
   text-shadow: -2px 2px grey;
 }
 
-logo {
-  position:fixed;
+#beandust-logo {
+  height:50px;
+  padding:0px;
+  margin:0px;
 }
 
 nav {
@@ -37,6 +39,7 @@ nav {
   text-align: center;
   padding: 20px;
   text-transform: uppercase;
+  position:absolute;
 }
 
 nav a {
