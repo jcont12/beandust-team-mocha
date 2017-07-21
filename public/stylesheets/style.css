@@ -28,17 +28,21 @@ h1 {
   text-shadow: -2px 2px grey;
 }
 
+logo {
+  position:fixed;
+}
+
 nav {
   margin:0 auto;
   text-align: center;
   padding: 20px;
   text-transform: uppercase;
-
 }
 
 nav a {
   text-decoration: none;
   padding: 0 10px;
+
 }
 
 
@@ -92,6 +96,7 @@ iframe {
 #location-text {
   display:inline;
   float:left;
+  font-size: 120%;
 
 }
 
@@ -102,3 +107,46 @@ iframe {
    background-color: grey;
    float: right
  }
+
+table {
+  margin: 20px auto;
+}
+
+ th {
+   font-size: 120%;
+   padding-right: 4em;
+ }
+
+td {
+  font-size: 120%;
+  padding-right: 4em;
+}
+
+#mission-content {
+  font-size: 120%;
+  margin: 20px auto;
+  text-align: center;
+  width: 60%;
+}
+
+#about-content {
+  font-size: 120%;
+  margin: 40px auto;
+  width: 60%;
+}
+
+.raymond {
+  height:130px;
+  display: inline-block;
+  float:left;
+  margin-top: 160px;
+  margin-left: 70px;
+
+}
+
+.sage {
+  height:130px;
+  display: inline-block;
+  float: right;
+  margin-right: 90px;
+}
