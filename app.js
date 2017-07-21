@@ -1,5 +1,11 @@
 const express = require("express");
+const bodyParser = require("body-parser");
 const app = express();
+const orders = require("./routes/order");
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // Set where we serve static files
 app.use(express.static(__dirname + "/public"));
@@ -27,6 +33,8 @@ app.get('/mission', function(request, response) {
 app.get('/location', function(request, response) {
     response.sendFile('location.html', { root: __dirname + '/views'});
 });
+
+app.use("/orders", orders);
 
 
 // Start the server
