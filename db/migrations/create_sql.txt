@@ -13,3 +13,14 @@ CREATE TABLE Orders(
 
 
 INSERT INTO Orders(user_id, item, quantity, description, confirmation_number, price, createdAt, updatedAt) VALUES (1, 'Item', 2, 'Description', '10398598701', '4.75', current_timestamp, current_timestamp);
+
+CREATE TABLE Users(
+  id SERIAL NOT NULL PRIMARY KEY,
+  name VARCHAR(255),
+  address VARCHAR(255),
+  credit_card VARCHAR(255),
+  createdAt DATE NOT NULL,
+  updatedAt DATE NOT NULL
+);
+
+INSERT INTO Users(name, address, credit_card, createdAt, updatedAt) VALUES ("name","address","1234123412341234", current_timestamp, current_timestamp);
