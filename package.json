@@ -2,9 +2,14 @@
   "name": "node_test",
   "version": "0.0.1",
   "description": "test",
-  "main": "test.js",
+  "main": "app.js",
   "dependencies": {
-    "express": "^4.15.3"
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "pg": "^7.0.1",
+    "pg-hstore": "^2.3.2",
+    "pg-promise": "^6.3.5",
+    "sequelize": "^4.4.0"
   },
   "devDependencies": {},
   "scripts": {
